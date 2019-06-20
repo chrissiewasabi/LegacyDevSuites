@@ -1,0 +1,30 @@
+{
+  "name": "mapgi_dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Login.js",
+  "scripts": {
+    "start": "npm run webdriver-update &&npm run webdriver-start &&npm run protractor",
+    "Prottest": "./node_modules/.bin/protractor conf.js",
+    "pretest": "tsc",
+    "prot": "./node_modules/protractor/built/cli.js ",
+    "cucumber": "protractor JS/cucumberconf.js",
+    "webdriver-update": "./node_modules/.bin/webdriver-manager update"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/cucumber": "^4.0.6",
+    "@types/jasmine": "^3.3.5",
+    "@types/jasminewd2": "2.0.6",
+    "@types/node": "10.12.18",
+    "cucumber": "^5.1.0",
+    "jasmine": "~3.3.1",
+    "protractor": "5.4.2",
+    "chai": "4.2.0",
+    "mocha": "6.1.4",
+    "protractor-cucumber-framework": "^6.1.2",
+    "ts-node": "7.0.1",
+    "typescript": "^3.5.2"
+  }
+}
