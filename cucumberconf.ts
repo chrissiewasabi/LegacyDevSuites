@@ -1,7 +1,5 @@
 
 import {Config, browser} from "protractor";
-import { login } from "./PageObjects/LoginClass";
-// import {config} from "protractor";
 
 exports.config = {  
 //seleniumAddress: 'http://localhost:4444/wd/hub',
@@ -27,5 +25,5 @@ onPrepare:()=>{
   };
 
 
-// tsc- init - for typscript config file
-//npm init for package.json
+
+//npm run cucumber to run cucumber test defined in package.json

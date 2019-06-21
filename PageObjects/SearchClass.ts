@@ -1,17 +1,18 @@
-import {ElementFinder,browser, element,by} from "protractor";
+import {ElementFinder,browser, element,by,} from "protractor";
 
 export class SearchForm
 {
     Formslist: ElementFinder;
     search: ElementFinder;
-    Select:ElementFinder;
+    Select: ElementFinder;
 
     constructor()
     {
-    // this.search=browser.action().mouseMove(element(by.name("searchQuery"))).sendKeys("POM_test");  //browser.action().mouseMove(element(by.id("input#formSearchTextField.field"))).sendKeys("POM_test");
-       browser.action().mouseMove(element(by.css("input[id='formSearchTextField']"))).sendKeys("POM_test");
-    //    this.search=browser.action().mouseMove(element(by.id("input#formSearchTextField.field")));
-       this.Select=browser.action().perform(element(by.css("submit")));
+     //this.search=browser.actions().mouseMove(element(by.name("searchQuery")));
+    // this.search=browser.actions().mouseMove(element(by.id("input#formSearchTextField.field")));
+    this.search=browser.actions().mouseMove(element(by.css("input[id='formSearchTextField']")));
+    this.Select=browser.actions().click(element(by.css("submit")));
+
 
     }
 }

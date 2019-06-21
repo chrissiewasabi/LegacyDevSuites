@@ -1,20 +1,15 @@
-
 import {Config, browser} from "protractor";
-import { login } from "./PageObjects/LoginClass";
 // import {config} from "protractor";
 
 exports.config = {  
 //seleniumAddress: 'http://localhost:4444/wd/hub',
-framework:'custom',
-frameworkPath: require.resolve('protractor-cucumber-framework'),
- directConnect: true,
- capabilities: {
-  browserName: 'chrome'
-},
-specs: ['Spec.js'],
-cucumberOpts: {
+//  framework: 'custom',
+//  frameworkPath:require.resolve('protractor-cucumber-framework'),
+//  directConnect: true,
 
-  },
+/// 21 june 2019
+  
+specs: ['Spec.js'],  
   
 onPrepare:()=>{
 (global as any).Angularsite=function(flag:boolean){
@@ -24,6 +19,6 @@ onPrepare:()=>{
 
   };
 
-
-// tsc- init - for typscript config file
+  
+// tsc init -f for ts config file tsconfig.json. Define output dir in tsconfig.json for JS files to compiler JS files when tsc is used
 //npm init for package.json

@@ -16,13 +16,14 @@ it("Search form", async ()=> {
         });
       });
 
-// it("Search form", async ()=> {
-//     let t2=new SearchForm();
+it("Search form", async ()=> {
+    let t2=new SearchForm();
     
-//     // await browser.get("http://datadyne-dev.com/forms-dashboard");
-//     await t2.search.sendKeys("POM_test");
-//      //await t2.Select.click;  
-        // await browser.sleep(2000);
-//       });
+    await browser.get("http://datadyne-dev.com/forms-dashboard");
+    await t2.search.sendKeys("POM_test");
+     await t2.Select.click;  
+     //form display nmissing step/result in memory?
+        await browser.sleep(2000);
+      });
 
 });

@@ -4,12 +4,12 @@
   "description": "",
   "main": "Login.js",
   "scripts": {
-    "start": "npm run webdriver-update &&npm run webdriver-start &&npm run protractor",
-    "Prottest": "./node_modules/.bin/protractor conf.js",
+    "start": "npm run webdriver-update &&npm run webdriver-start",
     "pretest": "tsc",
-    "prot": "./node_modules/protractor/built/cli.js ",
+    "test":"protractor JS/conf.js",
     "cucumber": "protractor JS/cucumberconf.js",
-    "webdriver-update": "./node_modules/.bin/webdriver-manager update"
+    "webdriver-update": "./node_modules/.bin/webdriver-manager update",
+    "webdriver-start": "./node_modules/.bin/webdriver-manager start"
   },
   "author": "",
   "license": "ISC",
